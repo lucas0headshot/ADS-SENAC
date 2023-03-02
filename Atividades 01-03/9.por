@@ -1,15 +1,15 @@
 programa
 {
-	//Número 3
-	//Ler e imprimir um nome
+	//Número 8
+	//Simular uma conversa entre o Computador e o Usuário
 	
 	funcao inicio()
 	{
 		cadeia nome
-	
-		escreva("Digite um nome: ")
-		leia(nome)
-		escreva("Nome: ",nome)
+		
+		escreva("Olá, eu sou o Nº1, como é seu nome? ")
+			leia(nome)
+		escreva("\nBem-vindo ao clube ",nome,"!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 48; 
+ * @POSICAO-CURSOR = 169; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
