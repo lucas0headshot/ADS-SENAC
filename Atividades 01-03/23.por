@@ -10,6 +10,7 @@ programa
 		escreva("Digite uma medida em pés: ")
 			leia(pes)
 
+		//Arrumar
 		polegadas = (pes * 12)
 		jardas = (pes / 3)
 		milhas = (jardas / 1760)
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 348; 
+ * @POSICAO-CURSOR = 221; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
