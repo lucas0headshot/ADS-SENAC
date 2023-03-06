@@ -14,7 +14,7 @@ programa
 		escreva("Digite a temperatura: ")
 			leia(t)
 
-		m = (((p * v) * (t + 460)))
+		m = ((p * v) / ( 0.37 * (t + 460)))
 		escreva("Massa de ar: ",m)
 	}
 }
@@ -23,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 358; 
+ * @POSICAO-CURSOR = 333; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
