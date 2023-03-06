@@ -5,20 +5,14 @@ programa
 	
 	funcao inicio()
 	{
-		real pEspetaculo, pConvite, qConvite, vArrecadado
+		real pEspetaculo, pConvite, qConvite
 		
 		escreva("Digite o custo do espetáculo: ")
 			leia(pEspetaculo)
-		escreva("Digite o preço do convite: ")
+		escreva("Digite o preço do convite: ")
 			leia(pConvite)
 
-		qConvite = 0
-		vArrecadado = 0 
-		
-		enquanto (vArrecadado < pEspetaculo){
-			vArrecadado = (vArrecadado + pConvite)
-			qConvite = (qConvite + 1)
-		}
+		qConvite = (pEspetaculo / pConvite)
 
 		escreva("Convites necessários p/ atingir o custo(",pEspetaculo,"R$): ",qConvite)
 	}
@@ -28,8 +22,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 572; 
+ * @POSICAO-CURSOR = 474; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
