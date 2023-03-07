@@ -5,8 +5,7 @@ programa
 	
 	funcao inicio()
 	{
-		real altura, largura, qLatas, mQuadrado, rendimento
-		inteiro consumoMquadrado, qTinta
+		real altura, largura, qLatas, mQuadrado, rendimento, consumoMquadrado, qTinta
 		
 		escreva("Digite o consumo de tinta p/ metro quadrado(Em miligramas): ")
 			leia(consumoMquadrado)
@@ -23,8 +22,6 @@ programa
 		qLatas = (mQuadrado / rendimento)
 
 		escreva("Serão necessárias ",qLatas," latas para pintar ",mQuadrado," metros quadrados")
-
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 560; 
+ * @POSICAO-CURSOR = 546; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
