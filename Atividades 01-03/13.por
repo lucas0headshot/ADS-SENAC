@@ -5,7 +5,7 @@ programa
 	
 	funcao inicio()
 	{
-		real altura, largura, qLatas, mQuadrado, rendimento, consumoMquadrado, qTinta
+		real altura, largura, qLatas, mQuadrado, consumoMquadrado, qTinta, rendimento
 		
 		escreva("Digite o consumo de tinta p/ metro quadrado(Em miligramas): ")
 			leia(consumoMquadrado)
@@ -16,10 +16,10 @@ programa
 		escreva("Digite a largura da parede(Em metros): ")
 			leia(largura)
 
-		//Fazer funcionar!
+		
 		mQuadrado = (altura * largura)
-		rendimento = (qTinta / consumoMquadrado)
-		qLatas = (mQuadrado / rendimento)
+		rendimento = ((consumoMquadrado * 1000) / mQuadrado)
+		qLatas = (qTinta / rendimento)
 
 		escreva("Serão necessárias ",qLatas," latas para pintar ",mQuadrado," metros quadrados")
 	}
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 546; 
+ * @POSICAO-CURSOR = 528; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
