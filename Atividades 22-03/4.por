@@ -15,10 +15,10 @@ programa
 		se (num < num2 e num < num3){
 			escreva(num," é o menor número!")
 		}
-		se (num2 < num e num2 < num3){
+		senao se(num2 < num e num2 < num3){
 			escreva(num2," é o menor número!")			
 		}
-		se (num3 < num e num3 < num2){
+		senao{
 			escreva(num3," é o menor número!")
 		}
 	}
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 444; 
+ * @POSICAO-CURSOR = 389; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
