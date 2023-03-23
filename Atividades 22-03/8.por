@@ -1,5 +1,9 @@
 programa
 {
+	//Ler o custo de fabricação de um carro e calcular o preço final, baseando-se na tabela abaixo:
+	//Até 15.000 = 5% distribuidor
+	//Entre 15.000 e 25.000 = 10% distribuidor + 15% impostos
+	//Acima de 25.000 = 15% distribuidor + 20% impostos
 	
 	funcao inicio()
 	{
@@ -22,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 402; 
+ * @POSICAO-CURSOR = 251; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

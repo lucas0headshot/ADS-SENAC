@@ -1,18 +1,18 @@
 programa
 {
-	//Ler o salário e caso seja inferior a 1.500, calcular um aumento de 30% no salário
+	//Ler um número e informar se é divisível por 10,5 e 2 ao mesmo tempo
 	
 	funcao inicio()
 	{
-		real sal
+		inteiro num
 
-		escreva("Digite o salário(Em R$): ")
-			leia(sal)
+		escreva("Digite um número: ")
+			leia(num)
 
-		se (sal > 1500){
-			escreva(sal," + 30% = ",sal + (sal * 0.3))
+		se ((num % 10 == 0) e (num % 5 == 0) e (num % 2 == 0)){
+			escreva(num," é divisível por 10, 5 e 2 ao mesmo tempo!")
 		}senao{
-			escreva("Esse funcionário não tem direito a aumento")
+			escreva(num," não é divisível por 10, 5 e 2 ao mesmo tempo!")
 		}
 	}
 }
@@ -21,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 95; 
+ * @POSICAO-CURSOR = 360; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

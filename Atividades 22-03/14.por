@@ -1,18 +1,21 @@
 programa
 {
-	//Ler o salário e caso seja inferior a 1.500, calcular um aumento de 30% no salário
-	
+	//Ler a altura e sexo de uma pessoa, e informar o peso ideal
+		
 	funcao inicio()
 	{
-		real sal
+		real altura
+		caracter sexo
+		
+		escreva("Digite o sexo(M ou F): ")
+			leia(sexo)
+		escreva("Digite a altura: ")
+			leia(altura)
 
-		escreva("Digite o salário(Em R$): ")
-			leia(sal)
-
-		se (sal > 1500){
-			escreva(sal," + 30% = ",sal + (sal * 0.3))
+		se (sexo == 'F'){
+			escreva("Seu peso ideal: ",(62.1 * altura) - 44.7)
 		}senao{
-			escreva("Esse funcionário não tem direito a aumento")
+			escreva("Seu peso ideal: ",(72 * altura) - 58)
 		}
 	}
 }
@@ -21,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 95; 
+ * @POSICAO-CURSOR = 366; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

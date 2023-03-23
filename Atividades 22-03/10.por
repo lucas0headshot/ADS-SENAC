@@ -1,6 +1,6 @@
 programa
 {
-	
+	//Ler o nome e peso de duas pessoas e informar quem é o mais gordo(a)
 	funcao inicio()
 	{
 		real peso[2]
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 232; 
+ * @POSICAO-CURSOR = 81; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {peso, 6, 7, 4}-{nome, 7, 9, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

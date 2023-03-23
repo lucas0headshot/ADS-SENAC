@@ -1,5 +1,8 @@
 programa
 {
+	//Ler um salário e calular o valor reajustado de acordo com a tabela abaixo:
+	//Até 1.500 = 35%
+	//Acima de 1.500 = 15%
 	
 	funcao inicio()
 	{
@@ -20,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 204; 
+ * @POSICAO-CURSOR = 131; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

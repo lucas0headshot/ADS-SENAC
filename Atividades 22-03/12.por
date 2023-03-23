@@ -1,18 +1,20 @@
 programa
 {
-	//Ler o salário e caso seja inferior a 1.500, calcular um aumento de 30% no salário
+	//ler dois números e informar se a divisão do primeiro número pelo segundo é exata
 	
 	funcao inicio()
 	{
-		real sal
+		inteiro num, num2
 
-		escreva("Digite o salário(Em R$): ")
-			leia(sal)
-
-		se (sal > 1500){
-			escreva(sal," + 30% = ",sal + (sal * 0.3))
+		escreva("Digite o primeiro número: ")
+			leia(num)
+		escreva("Digite o segundo número: ")
+			leia(num2)
+		
+		se ((num % num2) == 0){
+			escreva(num," / ",num2," é exato!")
 		}senao{
-			escreva("Esse funcionário não tem direito a aumento")
+			escreva(num," / ",num2," não é exato!")
 		}
 	}
 }
@@ -21,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 95; 
+ * @POSICAO-CURSOR = 277; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

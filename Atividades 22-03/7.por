@@ -1,5 +1,10 @@
 programa
 {
+	//Ler o saldo médio e calcular o crédito disponível, baseando-se na tabela abaixo:
+	//Acima de 4.000 = 30%
+	//Entre 3.999 e 3.000 = 25%
+	//Entre 2.999 e 2.000 = 20%
+	//Até 1.999 = 10%
 	
 	funcao inicio()
 	{
@@ -28,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 556; 
+ * @POSICAO-CURSOR = 195; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
