@@ -1,5 +1,6 @@
 programa
 {
+	//Ler dois números e possibilitar ao usuário escolher o que fazer com aqueles números
 	
 	funcao inicio()
 	{
@@ -40,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 691; 
+ * @POSICAO-CURSOR = 97; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
