@@ -31,7 +31,7 @@ programa
 			}senao se (opcao == 4){
 				escreva("\n",num," / ",num2," = ",num / num2)
 			}senao se (opcao == 5){
-				limpa()
+				retorne
 			}
 		}
 	}
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 97; 
+ * @POSICAO-CURSOR = 869; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
