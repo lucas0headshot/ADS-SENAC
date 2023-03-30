@@ -1,5 +1,15 @@
 programa
 {
+	//Ler o preço e código de origem de um produto. Informar a procedência deste produto de acordo com a tabela abaixo:
+	//Código		Procedência
+	//1				Sul
+	//2				Norte
+	//3				Leste
+	//4				Oeste
+	//5 ou 6			Nordeste
+	//7, 8 ou 9		Sudeste
+	//entre 10 e 20	Centro-Oeste
+	//entre 21 e 30	Nordeste
 	
 	funcao inicio()
 	{
@@ -37,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 870; 
+ * @POSICAO-CURSOR = 303; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
