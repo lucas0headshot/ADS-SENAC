@@ -1,33 +1,38 @@
 programa
 {
-	//Ler dois números e possibilitar ao usuário escolher o que fazer com aqueles números
 	
 	funcao inicio()
 	{
-		inteiro num, num2, opcao
+		inteiro opcao, num, num2
 
 		escreva("Digite o primeiro número: ")
 			leia(num)
 		escreva("Digite o segundo número: ")
 			leia(num2)
-		
-		opcao = 1
 
-		enquanto ((opcao >= 1) e (opcao <= 5)){
-			escreva("\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Sair\nO que deseja fazer com esses números? ")
-				leia(opcao)
-				
-			se (opcao == 1){
-				escreva("\n",num," + ",num2," = ",num + num2)
-			}senao se (opcao == 2){
-				escreva("\n",num," - ",num2," = ",num - num2)
-			}senao se (opcao == 3){
+		escreva("1 - Calcular média \n2 - Diferença entre o + e - \n3 - Produto(Multiplicação) \n4 - Dividir 1º pelo 2º")
+		escreva("\nO que deseja fazer com esses números? ")
+			leia(opcao)
+
+		escolha (opcao){
+			caso 1:
+				escreva("\n(",num," + ",num2,")  / 2 = ",(num + num2) / 2)
+				pare
+			caso 2:
+				se (num > num2){
+					escreva("\n",num," - ",num2," = ",num - num2)
+				}senao{
+					escreva("\n",num2," - ",num," = ",num2 - num)
+				}
+				pare
+			caso 3:
 				escreva("\n",num," * ",num2," = ",num * num2)
-			}senao se (opcao == 4){
+				pare
+			caso 4:
 				escreva("\n",num," / ",num2," = ",num / num2)
-			}senao se (opcao == 5){
-				retorne
-			}
+				pare
+			caso contrario:
+				escreva("Opção inválida!")
 		}
 	}
 }
@@ -36,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 449; 
+ * @POSICAO-CURSOR = 342; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
