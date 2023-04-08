@@ -22,7 +22,11 @@ programa
 
 		escreva("Números digitados: ")
 		para (i = 1; i<=q_digitada; i++){
-			escreva(num[i],", ")
+			se (i == q_digitada){
+				escreva(num[i])
+			}senao{
+				escreva(num[i],", ")
+			}
 			media = media + num[i]
 		}
 
@@ -35,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 478; 
+ * @POSICAO-CURSOR = 537; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {num, 9, 10, 3}-{i, 9, 19, 1}-{q_digitada, 9, 26, 10};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
