@@ -1,13 +1,13 @@
 programa
 {
-	//Ler números e informar a média
+	//Ler números e informar a média
 	
 	inclua biblioteca Matematica --> Mat
 	
 	funcao inicio()
 	{
 		inteiro num[12], i = 1, q_digitada = 0
-		real media = 0
+		real media = 0.00
 		cadeia resposta
 
 		faca{
@@ -39,9 +39,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 537; 
+ * @POSICAO-CURSOR = 167; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {num, 9, 10, 3}-{i, 9, 19, 1}-{q_digitada, 9, 26, 10};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
