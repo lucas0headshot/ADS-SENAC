@@ -1,26 +1,41 @@
 programa
 {
-	//Informar todos os números de 1 até um número digitado pelo usuário e informar a soma destes números
+	//Informar todos os números de 1 até um número digitado pelo usuário e informar a soma destes números
 	
 	funcao inicio()
 	{
-		inteiro i, num, produto = 0
+		inteiro i, num, resultado = 1
+		caracter resposta = 'A'
 
 		faca{
 			escreva("Digite um número: ")
 				leia(num)
-		}enquanto (num <= 0)
-		
-		para (i = 1; i <= num; i++){
+			escreva("\nDeseja calcular o produto ou fatorial(P/F)? ")
+				leia(resposta)
+		}enquanto ((num <= 0) ou (resposta != 'P') e (resposta != 'F'))
+
+		limpa()
+		se (resposta == 'P'){
+			para (i = 1; i <= num; i++){
+				se (i == num){
+					escreva(i)
+				}senao{
+					escreva(i,", ")
+				}
+				resultado = resultado * i
+			}
+			escreva("\nProduto: ",resultado)
+		}senao{
+			para (i = 1; i <= num; i++){
 			se (i == num){
 				escreva(i)
 			}senao{
 				escreva(i,", ")
 			}
-			produto = produto + i
+			resultado = resultado + i
+			}
+			escreva("\nFatorial: ",resultado)
 		}
-
-		escreva("\nProduto/Fatorial: ",produto)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 412; 
+ * @POSICAO-CURSOR = 406; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
