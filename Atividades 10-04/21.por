@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade[12], i = 1, opiniao[12], q_pessoas = 0, q_bom = 0, q_regular = 0
+		inteiro idade[12], i = 1, opiniao[12], q_pessoas = 0, q_bom = 0, q_regular = 0, q_excelente = 0
 		real media_excelente = 0.00
 		cadeia filme
 		caracter resposta = 'S'
@@ -24,7 +24,8 @@ programa
 			}
 
 			se (opiniao[i] == 3){
-				media_excelente = media_excelente + idade[i]	
+				media_excelente = media_excelente + idade[i]
+				q_excelente++
 			}senao se (opiniao[i] == 2){
 				q_bom++
 			}senao{
@@ -39,7 +40,7 @@ programa
 		}enquanto (resposta != 'N')
 
 		limpa()
-		escreva("Filme:  ",filme," \n Media idades excelente: ",media_excelente / q_pessoas," \n Quantidade regular: ",q_regular," \n % bom: ",(q_bom * 100) / q_pessoas)
+		escreva("Filme:  ",filme," \n Media idades excelente: ",media_excelente / q_excelente," \n Quantidade regular: ",q_regular," \n % bom: ",(q_bom * 100) / q_pessoas)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 910; 
+ * @POSICAO-CURSOR = 294; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {q_pessoas, 7, 41, 9}-{q_bom, 7, 56, 5}-{q_regular, 7, 67, 9}-{media_excelente, 8, 7, 15};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
