@@ -1,5 +1,6 @@
 programa
 {
+	//Preencher uma matriz e informar o maior número
 	
 	funcao inicio()
 	{
@@ -26,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 297; 
+ * @POSICAO-CURSOR = 60; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {nums, 6, 10, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
