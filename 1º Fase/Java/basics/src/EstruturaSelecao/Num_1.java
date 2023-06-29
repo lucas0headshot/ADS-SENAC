@@ -11,6 +11,7 @@ public class Num_1 {
         
        System.out.print("Digite um sexo(M ou F): ");
             sexo = read.next().charAt(0);
+            sexo = Character.toUpperCase(sexo); 
        
         switch (sexo) {
             case 'M' -> System.out.println(sexo + " = Masculino");
