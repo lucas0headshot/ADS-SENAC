@@ -1,3 +1,5 @@
+//Read 5 numbers and return an array with tripled numbers
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -20,7 +22,7 @@ public class Question2 {
         System.out.println("Original array: " + arrayOfInt);
         System.out.println("Array w/ tripled numbers: " + arrayOfIntTripled);
 
+
         scan.close();
     }
-
 }

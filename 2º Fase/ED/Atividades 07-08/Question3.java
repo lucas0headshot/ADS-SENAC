@@ -1,6 +1,7 @@
+//Read 10 numbers and return the difference between larger and smaller, and yours position on array
+
 import java.util.ArrayList;
 import java.util.Scanner;
-
 
 public class Question3 {
     public static void main(String[] args) {
@@ -31,6 +32,7 @@ public class Question3 {
         System.out.println("Larger number: " + largerNumber + " and are in " + arrayOfInt.indexOf(largerNumber) + "º of array");
         System.out.println("Smaller number: " + smallerNumber + " and are in " + arrayOfInt.indexOf(smallerNumber) + "º of array");
         System.out.println("The difference between " + largerNumber + " and " + smallerNumber + " are " + (largerNumber - smallerNumber));
+
 
         scan.close();
     }

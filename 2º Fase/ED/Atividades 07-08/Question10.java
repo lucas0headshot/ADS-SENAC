@@ -1,7 +1,9 @@
+//Read register of two courses, check registers that are multiplied
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Question9 {
+public class Question10 {
     public static void main(String[] args) {
         ArrayList<Integer> arrayOfProgramationCourse = new ArrayList<>();
         ArrayList<Integer> arrayOfLogicCourse = new ArrayList<>();
@@ -43,6 +45,7 @@ public class Question9 {
         }
 
         System.out.println("Registers multiplied: " + arrayOfRegistersMultiplied);
+
 
         scan.close();
     }

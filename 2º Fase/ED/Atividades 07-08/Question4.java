@@ -1,3 +1,5 @@
+//Read 5 numbers and return the first negative
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
