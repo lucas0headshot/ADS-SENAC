@@ -20,10 +20,11 @@ public class Question5 {
         char userContinue = 'Y';
         while(userContinue != 'N') {
             System.out.println("Type an number, to locate it on the array: ");
-            
+            int number = scan.nextInt();
+
             //Verify number typed by user
-            if(arrayOfInt.contains(scan.nextInt())) {
-                System.out.println("Thats number are in array!");
+            if(arrayOfInt.contains(number)) {
+                System.out.println("That number are in array! And are in " + arrayOfInt.indexOf(number) + "º position");
             } else {
                 System.out.println("That number aren't at array...");
             }

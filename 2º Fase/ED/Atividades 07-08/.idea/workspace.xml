@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87dff284-47df-4e08-ae17-0e1df1bbac9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Question9">
+  <component name="RunManager" selected="Application.Question5">
     <configuration name="Question5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Question5" />
       <module name="Atividades 14-08" />
@@ -74,9 +69,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question5" />
         <item itemvalue="Application.Question9" />
         <item itemvalue="Application.Question6" />
-        <item itemvalue="Application.Question5" />
       </list>
     </recent_temporary>
   </component>
