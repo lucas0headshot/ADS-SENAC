@@ -1,0 +1,1 @@
+## Repositório contendo arquivos e algoritmos criados durante minha graduação em ADS no SENAC
