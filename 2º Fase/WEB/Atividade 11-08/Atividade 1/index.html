@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Salário</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Calcule seu salário</h1>
+
+            <div class="form-group">
+                <label for="horas_trabalhadas">Horas trabalhadas</label>
+                    <input type="text" id="horas_trabalhadas" name="horas trabalhadas" value="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor_hora">Valor hora</label>
+                    <input type="text" id="valor_hora" name="valor hora" value="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="desconto">Desconto</label>
+                    <input type="text" id="desconto" name="desconto" value="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bonus">Bônus</label>
+                    <input type="text" id="bonus" name="bonus" value="0" required>
+            </div>
+
+            <button type="submit" onclick="calcularSalario()" value="Calcular!">Calcular</button>
+        </fieldset>
+    </form>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

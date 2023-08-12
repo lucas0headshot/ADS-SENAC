@@ -1,0 +1,28 @@
+body {
+    font-size: 1rem;
+}
+
+body form fieldset {
+    max-width: fit-content;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+body form fieldset button {
+    margin-top: 1.5rem;
+    width: 100px;
+    align-self: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem;
+}
+.form-group label {
+    align-self: center;
+    margin-bottom: 10px;
+}
