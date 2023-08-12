@@ -1,4 +1,4 @@
-//Read 5 numbers and verify that a number typed by user is on array
+//Read 5 numbers and return a new array with inverted positions
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Question6 {
     public static void main(String[] args) {
         ArrayList<Integer> arrayOfInt = new ArrayList<>();
-
+        ArrayList<Integer> arrayOfIntInverted = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
 
 
@@ -14,25 +14,13 @@ public class Question6 {
         for(int i = 0; i < 5; i++) {
             System.out.println("Type the " + (i + 1) + "º number: ");
             arrayOfInt.add(scan.nextInt());
+
+            //Add the actual number to the first position, pushing the following to the end and creating an inverted array
+            arrayOfIntInverted.add(0, arrayOfInt.get(i));
         }
 
-        //Loop and verify number typed by user
-        char userContinue = 'Y';
-        while(userContinue != 'N') {
-            System.out.println("Type an number, to locate it on the array: ");
-            
-            //Verify number typed by user
-            if(arrayOfInt.contains(scan.nextInt())) {
-                System.out.println("Thats number are in array!");
-            } else {
-                System.out.println("That number aren't at array...");
-            }
-
-            System.out.println("Continue(Y/N)? ");
-            userContinue = scan.next().toUpperCase().charAt(0);
-
-            scan.nextLine();
-        }
+        System.out.println("Original array: " + arrayOfInt);
+        System.out.println("Inverted: " + arrayOfIntInverted);
 
 
         scan.close();

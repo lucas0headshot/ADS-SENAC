@@ -5,22 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87dff284-47df-4e08-ae17-0e1df1bbac9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Atividades 07-08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question10.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Question3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question4.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question7.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question9.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question8.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -34,32 +37,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/ADS-SENAC/2º Fase/ED/Atividades 07-08&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/wamp64/www/ADS-SENAC/2º Fase/ED/Atividades 07-08",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+}]]></component>
+  <component name="RunManager" selected="Application.Question9">
+    <configuration name="Question5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question5" />
       <module name="Atividades 14-08" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="Question6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question6" />
       <module name="Atividades 14-08" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question9" />
+      <module name="Atividades 14-08" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Question9" />
+        <item itemvalue="Application.Question6" />
+        <item itemvalue="Application.Question5" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

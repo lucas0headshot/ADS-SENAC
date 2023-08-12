@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Question8 {
+public class Question7 {
     public static void main(String[] args) {
         ArrayList<String> arrayOfName = new ArrayList<>();
         ArrayList<Double> arrayOfSalary = new ArrayList<>();
