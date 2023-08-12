@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87dff284-47df-4e08-ae17-0e1df1bbac9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Atividades 14-08.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lista de Exercícios - Vetores.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/wamp64/www/ADS-SENAC/2º Fase/ED/Atividades 07-08",
+    "last_opened_file_path": "C:/wamp64/www/ADS-SENAC/2º Fase/ED/Atividades 14-08",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -63,6 +79,16 @@
     <configuration name="Question9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Question9" />
       <module name="Atividades 14-08" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
