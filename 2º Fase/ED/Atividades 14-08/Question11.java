@@ -2,12 +2,11 @@
 //Read 10 codes and their respective amount on two arrays
 //Loop until the user want to stop, reading the code and product that client want to buy
 
-import java.io.IOException;
 import  java.util.ArrayList;
 import java.util.Scanner;
 
 public class Question11 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         ArrayList<Integer> arrayOfProductCode = new ArrayList<>();
         ArrayList<Integer> arrayOfProductStock = new ArrayList<>();
 
@@ -40,18 +39,20 @@ public class Question11 {
             System.out.println("Type client code(0 = closes): ");
             clientCode = scan.nextInt();
 
-            //Read code that client want to buy
+            //Read product code that client wants to buy
             System.out.println("Type product code: ");
             int productCode = scan.nextInt();
 
-
+            //Verify that's product code exists
             if(arrayOfProductCode.contains(productCode)) {
-                int actualStock = arrayOfProductStock.get(productCode);
+                int indexProductStock = arrayOfProductCode.indexOf(productCode);
+                int actualStock = arrayOfProductStock.get(indexProductStock);
                 System.out.println("Type the amount needed: ");
                 int amountNeeded = scan.nextInt();
 
+                //Verify that's stock is sufficient
                 if(actualStock >= amountNeeded) {
-                    arrayOfProductStock.set(productCode, actualStock - amountNeeded);
+                    arrayOfProductStock.set(indexProductStock, actualStock - amountNeeded);
                     System.out.println("Order answered!");
                 } else {
                     System.out.println("Insufficient stock!");
