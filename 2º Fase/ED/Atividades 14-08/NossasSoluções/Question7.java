@@ -1,4 +1,4 @@
-//Read name and salary of 20 peoples, at the end return a ordered list with name and salary(With adjust of 8%)
+package NossasSoluções;//Read name and salary of 20 peoples, at the end return a ordered list with name and salary(With adjust of 8%)
 
 import java.util.ArrayList;
 import java.util.Scanner;

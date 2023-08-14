@@ -1,4 +1,4 @@
-//Read the name and average grade of 7 students, return the larger grade
+package MinhasSoluções;//Read the name and average grade of 7 students, return the larger grade
 //If the grade is < 7, return the amount needed to be approved
 
 import java.util.ArrayList;

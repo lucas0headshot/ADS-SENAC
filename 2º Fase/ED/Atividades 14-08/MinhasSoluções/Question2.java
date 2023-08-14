@@ -1,4 +1,4 @@
-//Read 5 numbers and return an array with tripled numbers
+package MinhasSoluções;//Read 5 numbers and return an array with tripled numbers
 
 import java.util.Scanner;
 import java.util.ArrayList;

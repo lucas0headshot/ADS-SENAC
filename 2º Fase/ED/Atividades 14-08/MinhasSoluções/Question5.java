@@ -1,4 +1,4 @@
-//Read 5 numbers and verify that a number typed by user is on array
+package MinhasSoluções;//Read 5 numbers and verify that a number typed by user is on array
 
 import java.util.ArrayList;
 import java.util.Scanner;

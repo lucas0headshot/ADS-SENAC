@@ -1,4 +1,4 @@
-//Read 5 numbers and return the first negative
+package MinhasSoluções;//Read 5 numbers and return the first negative
 
 import java.util.Scanner;
 import java.util.ArrayList;

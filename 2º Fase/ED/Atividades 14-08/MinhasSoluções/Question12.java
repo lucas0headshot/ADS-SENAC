@@ -1,4 +1,4 @@
-//Read the sales, % of commission and name of 10 sellers
+package MinhasSoluções;//Read the sales, % of commission and name of 10 sellers
 //Return a relatory with name and amount of commission to receive
 //Return total sales of all sellers
 //Return the larger and smaller commission value and their respective names

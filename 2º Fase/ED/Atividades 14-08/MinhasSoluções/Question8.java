@@ -1,4 +1,4 @@
-//Read 6 numbers and return the evens and oddes, and their quantity
+package MinhasSoluções;//Read 6 numbers and return the evens and oddes, and their quantity
 
 import java.util.ArrayList;
 import java.util.Scanner;

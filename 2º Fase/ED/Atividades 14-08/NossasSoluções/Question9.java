@@ -1,4 +1,4 @@
-//Check registers that are multiplied in courses
+package NossasSoluções;//Check registers that are multiplied in courses
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-//Read 5 numbers and return a new array with inverted positions
+package MinhasSoluções;//Read 5 numbers and return a new array with inverted positions
 
 import java.util.ArrayList;
 import java.util.Scanner;

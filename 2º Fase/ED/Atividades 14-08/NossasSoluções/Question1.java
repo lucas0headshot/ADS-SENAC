@@ -1,4 +1,4 @@
-//Read 5 numbers and return the larger, smaller and calculate average
+package NossasSoluções;//Read 5 numbers and return the larger, smaller and calculate average
 
 import java.util.ArrayList;
 import java.util.Scanner;

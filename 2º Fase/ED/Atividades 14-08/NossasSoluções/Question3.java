@@ -1,4 +1,4 @@
-//Read 10 numbers and return the difference between larger and smaller, and their position on array
+package NossasSoluções;//Read 10 numbers and return the difference between larger and smaller, and their position on array
 
 import java.util.ArrayList;
 import java.util.Scanner;

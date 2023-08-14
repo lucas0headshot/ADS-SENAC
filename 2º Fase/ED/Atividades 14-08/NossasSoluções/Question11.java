@@ -1,4 +1,4 @@
-//Control stock of 10 products
+package NossasSoluções;//Control stock of 10 products
 //Read 10 codes and their respective amount on two arrays
 //Loop until the user want to stop, reading the code and product that client want to buy
 
