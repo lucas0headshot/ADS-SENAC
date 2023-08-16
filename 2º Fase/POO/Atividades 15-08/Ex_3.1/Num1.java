@@ -1,8 +1,8 @@
 //Calculadora simples com JOptionPane
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
-public class ex_4 {
+public class Num1 {
     public static void main(String[] args) {
         Integer num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o primeiro número:", "Calculadora", JOptionPane.INFORMATION_MESSAGE));
 

@@ -2,7 +2,7 @@
 
 import javax.swing.*;
 
-public class ex_5 {
+public class Num1 {
     public static void main(String[] args) {
         String nome = JOptionPane.showInputDialog(null, "Digite seu nome:", "Informe", JOptionPane.INFORMATION_MESSAGE);
 
