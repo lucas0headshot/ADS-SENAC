@@ -28,7 +28,7 @@ public class Questao5 {
 
         // Inverter a palavra usando o StringBuilder
         palavraInvertida.reverse();
-        
+
         // Verificar se a palavra é um palíndromo
         if(palavra.equals(palavraInvertida.toString())) {
             System.out.println(palavra + " é um palíndromo.");
