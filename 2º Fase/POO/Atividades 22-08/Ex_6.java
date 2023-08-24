@@ -1,39 +1,49 @@
+import javax.swing.*;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class Ex_6 {
     public static void main(String[] args) {
-        List<Integer> numeros = new ArrayList<Integer>();
+        ArrayList<Integer> arrayNumeros = new ArrayList<>();
+        ArrayList<Integer> arrayNumerosPares = new ArrayList<>();
 
-        Scanner scan = new Scanner(System.in);
-
-        int maior = Integer.MIN_VALUE;
-        int menor = Integer.MAX_VALUE;
+        int maiorNumero = Integer.MIN_VALUE;
+        int menorNumero = Integer.MAX_VALUE;
         int media = 0;
 
-        for (int i = 0; i < 3; i++){
-            System.out.println("Informe o numero" + (i+1));
-            numeros.add(scan.nextInt());
-        }
+        int continuar = 1;
 
-        for (int i = 0; i < numeros.size();i++){
-            if( numeros.get(i) > maior ){
-                maior = numeros.get(i);
+
+        //Preencher array
+        for (int i = 0; continuar != JOptionPane.NO_OPTION; i++){
+            int numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o " + (i + 1) + "º número", "Números", JOptionPane.INFORMATION_MESSAGE));
+            arrayNumeros.add(numero);
+
+            if(numero % 2 == 0) {
+                arrayNumerosPares.add(numero);
             }
 
-            if (numeros.get(i) < menor){
-                menor = numeros.get(i);
+            if(numero > maiorNumero) {
+                maiorNumero = numero;
             }
 
-            media += numeros.get(i);
+            if(numero < menorNumero) {
+                menorNumero = numero;
+            }
+
+            media += numero;
+
+            continuar = JOptionPane.showOptionDialog(null, "Deseja continuar?", "Continuar digitando", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, new String[]{"Sim", "Não"}, "Sim");
         }
 
-        media = media / numeros.size();
 
-        System.out.println("Maior: " + maior);
-        System.out.println("Menor: " + menor);
+        //Calcular média
+        media /= arrayNumeros.size();
+
+
+        System.out.println("Números: " + arrayNumeros);
+        System.out.println("Maior: " + maiorNumero);
+        System.out.println("Menor: " + menorNumero);
         System.out.println("Media: " + media);
-
+        System.out.println("Números pares: " + arrayNumerosPares);
     }
 }
