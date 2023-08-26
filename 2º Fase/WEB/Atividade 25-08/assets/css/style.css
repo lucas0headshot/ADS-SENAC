@@ -1,0 +1,70 @@
+* {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    width: 90%;
+}
+
+header h1 {
+    margin: 20px;
+}
+
+.heading-buttons {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.heading-buttons .a-voltar {
+    text-decoration: none;
+    color: #0F35FF;
+}
+.heading-buttons .btn-salvar {
+    background-color: #4F9E42;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.heading-buttons .btn-salvar i {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.form-login {
+    margin-left: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 50%;
+}
+.form-group label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+.form-group label i {
+    font-size: 0.5rem;
+    margin-left: 2px;
+    color: #FF0000;
+}
+.form-group input {
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+}
