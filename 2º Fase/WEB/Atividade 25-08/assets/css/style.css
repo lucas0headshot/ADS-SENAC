@@ -3,11 +3,20 @@
     font-family: 'Inter', sans-serif;
 }
 
+
+body main {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
 header {
     font-size: 24px;
     font-weight: 400;
     line-height: 29.05px;
-    width: 90%;
+    width: 100%;
 }
 
 header h1 {
@@ -19,26 +28,38 @@ header h1 {
     flex-direction: row;
     font-size: 1.1rem;
     margin-bottom: 20px;
-    justify-content: space-between;
-    align-items: center;
     margin: 20px;
+    width: 100%;
 }
-.heading-buttons .a-voltar {
-    text-decoration: none;
-    color: #0F35FF;
-}
-.heading-buttons .btn-salvar {
-    background-color: #4F9E42;
+.btn {
     color: #fff;
     padding: 15px;
     border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
 }
-.heading-buttons .btn-salvar i {
+.a-voltar {
+    color: #0F35FF;
+    cursor: pointer;
+}
+.btn-salvar {
+    background-color: #4F9E42;
+}
+.btn-pesquisar {
+    float: right;
+    background-color: #42839e;
+}
+.btn-novo {
+    float: right;
+    background-color: #0037fb;
+}
+.btn-icon {
     font-weight: 600;
     margin-right: 20px;
 }
+
+
 
 .form-login {
     margin-left: 30px;
@@ -49,6 +70,7 @@ header h1 {
     flex-direction: column;
     margin: 1rem;
     width: 50%;
+    max-width: 377px;
 }
 .form-group label {
     display: flex;
@@ -67,4 +89,35 @@ header h1 {
 .form-group input {
     border: 1px solid #cbcbcb;
     border-radius: 4px;
+    height: 34px;
+}
+
+.form-consulta {
+    display: flex;
+    justify-items: center;
+}
+
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.table-query {
+    float:left;
+    width:100%;
+    margin-top: 30px;
+}
+
+.table-query thead tr th {
+    border-bottom: 2px solid #000;    
+}
+
+.table-query tbody tr td {
+    padding: 5px;
+}
+
+.table-query .fa-trash {
+    color: #FF0000;
 }

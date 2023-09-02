@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <header>
+        <h1>Usuário</h1>
+        <hr>
+    </header>
+
+    <main>
+        <div class="heading-buttons">
+            <a class="btn btn-pesquisar"><i class="fa fa-magnifying-glass"></i>Pesquisar</a>
+        </div>
+
+        <form class="form-consulta" action="">
+            <div class="column">
+                <div class="form-group">
+                    <label for="idConsulta">ID</label>
+                    <input type="text" id="idConsulta" name="id consulta" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="loginConsulta">Login</label>
+                    <input type="text" id="loginConsulta" name="login consulta" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="form-group">
+                    <label for="nomeConsulta">Nome</label>
+                    <input type="text" id="nomeConsulta" name="nome consulta" required>
+                </div>
+            </div>
+        </form>
+        <hr/>
+        <div>
+            <a class="btn btn-novo"><i class="btn-icon fa fa-plus"></i>Novo</a>
+        </div>
+
+        <table class="table-query" cellspacing="0">
+            <thead>
+                <tr>
+                    <th width="10%">ID</th>
+                    <th width="35%" align="left">Nome</th>
+                    <th width="35%" align="left">Login</th>
+                    <th width="10%">Editar</th>
+                    <th width="10%">Excluir</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td align="center">1</td>
+                    <td>Exemplo</td>
+                    <td>exemplo@exemplo.com</td>
+                    <td align="center" class="td-icon"><i class="fa fa-pen-to-square"></i></td>
+                    <td align="center" class="td-icon"><i class="fa fa-trash"></i></td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td>Exemplo 2</td>
+                    <td>exemplo2@exemplo.com</td>
+                    <td align="center" class="td-icon"><i class="fa fa-pen-to-square"></i></td>
+                    <td align="center" class="td-icon"><i class="fa fa-trash"></i></td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td>Exemplo 3</td>
+                    <td>exemplo3@exemplo.com</td>
+                    <td align="center" class="td-icon"><i class="fa fa-pen-to-square"></i></td>
+                    <td align="center" class="td-icon"><i class="fa fa-trash"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
