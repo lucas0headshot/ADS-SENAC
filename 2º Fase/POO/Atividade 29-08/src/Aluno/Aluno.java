@@ -11,20 +11,20 @@ public class Aluno {
     String sexo;
     String curso;
     String instituicao;
-    Double frequencia;
     String email;
     String nome;
     LocalDate dataNascimento;
     String telefone;
     String endereco;
     Map<String, List<Integer>> notasDisciplinas;
+    List<Boolean> frequencias;
 
 
     public void getDados() {
         System.out.println("Código: " + this.codigo + " | Nome: " + this.nome + " | Data de nascimento: " + this.dataNascimento);
     }
 
-    public void getMediaMateria() {
+    public void calcularMediaMateria() {
         for (Map.Entry<String, List<Integer>> entry : notasDisciplinas.entrySet()) {
             String nomeDisciplina = entry.getKey();
             List<Integer> notas = entry.getValue();
@@ -39,7 +39,7 @@ public class Aluno {
         }
     }
 
-    public void getMedia() {
+    public Integer calcularMediaGeral() {
         Integer media = 0;
 
         for (Map.Entry<String, List<Integer>> entry : notasDisciplinas.entrySet()) {
@@ -53,6 +53,18 @@ public class Aluno {
             media += (somaNotas / notas.size()) / notasDisciplinas.size();
         }
 
-        System.out.println("Média geral: " + media);
+        return media;
+    }
+
+    public Double calcularFrequencia() {
+        Integer presencas = 0;
+
+        for (Boolean frequencia : frequencias) {
+            if(frequencia == true) {
+                presencas++;
+            }
+        }
+
+        return ((presencas.doubleValue() / frequencias.size()) * 100.0);
     }
 }

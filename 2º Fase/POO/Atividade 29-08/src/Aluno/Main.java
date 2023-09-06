@@ -1,5 +1,6 @@
 package Aluno;
 
+import java.lang.management.BufferPoolMXBean;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,6 +13,8 @@ public class Main {
         Map<String, List<Integer>> disciplinas = new HashMap<>();
         List<Integer> notasMatematica = new ArrayList<>();
         List<Integer> notasPortugues = new ArrayList<>();
+        List<Boolean> frequenciasAluno = new ArrayList<>();
+        Boletim boletim = new Boletim();
 
 
         aluno1.codigo = 123456;
@@ -19,13 +22,20 @@ public class Main {
         aluno1.sexo = "Masculino";
         aluno1.curso = "Análise e Desenvolvimento de Sistemas";
         aluno1.instituicao = "SENAC";
-        aluno1.frequencia = 99.9;
         aluno1.email = "lucas.ronchi1@alunos.sc.senac.br";
         aluno1.nome = "Lucas";
         aluno1.dataNascimento = LocalDate.of(2005, 5, 26);
         aluno1.endereco = "Rua 123";
         aluno1.telefone = "48 123456789";
 
+
+        frequenciasAluno.add(true);
+        frequenciasAluno.add(true);
+        frequenciasAluno.add(true);
+        frequenciasAluno.add(true);
+        frequenciasAluno.add(true);
+
+        aluno1.frequencias = frequenciasAluno;
 
         notasMatematica.add(10);
         notasMatematica.add(9);
@@ -37,10 +47,8 @@ public class Main {
 
         aluno1.notasDisciplinas = disciplinas;
 
+        System.out.println(aluno1.calcularFrequencia());
 
-
-        aluno1.getDados();
-        aluno1.getMediaMateria();
-        aluno1.getMedia();
+        System.out.println(boletim.verificaAprovacaoAluno(aluno1.nome, aluno1.calcularMediaGeral(), aluno1.calcularFrequencia()));
     }
 }
