@@ -1,0 +1,2 @@
+ALTER TABLE pedidos
+	ADD COLUMN vl_pedido DECIMAL(11,2);
