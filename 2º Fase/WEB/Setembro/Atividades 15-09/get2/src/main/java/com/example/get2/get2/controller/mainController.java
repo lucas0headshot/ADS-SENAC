@@ -30,8 +30,14 @@ public class mainController {
 
 
     @GetMapping(value = "/convidado/{nome}-{token}")
-    public void setConvidado(@PathVariable String token, @PathVariable String nome) {
-        this.arrayConvidado.put(token, nome);
+    public String setConvidado(@PathVariable String token, @PathVariable String nome) {
+        if((!arrayConvidado.containsKey(token)) && (token.length() == 16)){
+            this.arrayConvidado.put(token, nome);
+
+            return "Convidado confirmado!";
+        }else{
+            return "Convite inválido!";
+        }
     }
 
 
