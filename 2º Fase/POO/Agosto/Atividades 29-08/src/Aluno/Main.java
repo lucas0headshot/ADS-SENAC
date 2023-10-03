@@ -24,6 +24,16 @@ public class Main {
         aula01.presenca = true;
 
 
+        Professor professor = new Professor("Bruno", "1291829292", LocalDate.of(2023, 10, 03));
+        System.out.println(professor);
+
+        Professor professor2 = new Professor("Bruno 2", "1921929298", "129128922");
+        System.out.println(professor2);
+
+        Professor professor3 = new Professor("Bruno 2", "1921929298", LocalDate.of(2023, 10, 03),"SENAC");
+        System.out.println(professor3);
+
+
         aluno.disciplinas.add(matematica);
         aluno.disciplinas.add(portugues);
         aluno.frequencias.add(aula01);
