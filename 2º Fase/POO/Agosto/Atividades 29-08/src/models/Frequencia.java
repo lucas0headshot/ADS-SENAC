@@ -1,4 +1,4 @@
-package Aluno;
+package models;
 
 import java.time.LocalDate;
 
@@ -8,7 +8,7 @@ public class Frequencia {
 
     @Override
     public String toString() {
-        return "Aluno.Frequencia{" +
+        return "models.Frequencia{" +
                 "dataAula=" + dataAula +
                 ", presenca=" + presenca +
                 '}';

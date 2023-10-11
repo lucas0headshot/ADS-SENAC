@@ -1,11 +1,11 @@
-package Aluno;
+package models;
 
 import java.time.LocalDate;
 
 public class Bolsa {
-    String descricao;
-    LocalDate dataInicial;
-    LocalDate dataFinal;
+    private String descricao;
+    private LocalDate dataInicial;
+    private LocalDate dataFinal;
 
 
 

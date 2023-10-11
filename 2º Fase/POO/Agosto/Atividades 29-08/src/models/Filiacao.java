@@ -1,8 +1,8 @@
-package Aluno;
+package models;
 
 public class Filiacao {
-    String nomePai;
-    String nomeMae;
+    private String nomePai;
+    private String nomeMae;
 
     public Filiacao(String nomePai, String nomeMae) {
         this.nomePai = nomePai;
