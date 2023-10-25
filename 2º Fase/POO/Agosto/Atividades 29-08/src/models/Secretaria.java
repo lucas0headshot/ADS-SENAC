@@ -27,7 +27,7 @@ public class Secretaria extends Funcionario {
         this.horasExtras = horasExtras;
     }
 
-    
+
     @Override
     public Double getSalario() {
         return (salarioContratual + salarioFamilia + bonus + horasExtras);
