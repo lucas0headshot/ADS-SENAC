@@ -7,7 +7,7 @@ public class Main {
        Aluno Lucas = new Aluno("Lucas", 156, "12912872", "SENAC");
 
 
-       Professor Bruno = new Professor("Bruno Kurzawe", 1, "12122", LocalDate.of(2023, 10, 10));
+       //Professor Bruno = new Professor("Bruno Kurzawe", 1, "12122", LocalDate.of(2023, 10, 10));
 
 
        Funcionario Rafael = new Funcionario("Rafael", 3, 1200.00, "Dev Full-Stack");

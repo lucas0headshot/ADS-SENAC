@@ -37,6 +37,22 @@ public class Aluno extends Pessoa {
     }
 
 
+    public void setDadosAluno(Integer codigo, String nome){
+        this.setDadosAluno(codigo, nome, null);
+    }
+
+    public void setDadosAluno(Integer codigo, String nome, LocalDate dataNascimento){
+        this.setDadosAluno(codigo, nome, dataNascimento, null);
+    }
+
+    public void setDadosAluno(Integer codigo, String nome, LocalDate dataNascimento, Integer mediaGeral){
+        this.setCodigo(codigo);
+        this.setNome(nome);
+        this.setDataNascimento(dataNascimento);
+        this.setMediaGeral(mediaGeral);
+    }
+
+
     public List<Disciplina> getDisciplinas() {
         return this.disciplinas;
     }
@@ -80,6 +96,10 @@ public class Aluno extends Pessoa {
 
     public void setFrequencias(List<Frequencia> frequencias) {
         this.frequencias = frequencias;
+    }
+
+    public void setMediaGeral(Integer mediaGeral) {
+        this.mediaGeral = mediaGeral;
     }
 
     public void setFiliacao(Filiacao filiacao) {

@@ -10,25 +10,36 @@ public class Professor extends Funcionario {
 
 
 
-    public Professor(String nome, Integer codigo, String matricula, LocalDate dataContratacao){
-        super.setNome(nome);
-        super.setCodigo(codigo);
-        this.matricula = matricula;
-        this.dataContratacao = dataContratacao;
-    }
-
-    public Professor(String nome, Integer codigo,String matricula, String telefone){
-        super.setNome(nome);
-        super.setCodigo(codigo);
+    public Professor(String nome, Integer codigo, Double salario, String cargo, String matricula, String telefone, String endereco, LocalDate dataContratacao) {
+        super(nome, codigo, salario, cargo);
         this.matricula = matricula;
         this.telefone = telefone;
+        this.endereco = endereco;
+        this.dataContratacao = dataContratacao;
     }
 
-    public Professor(String nome, Integer codigo,LocalDate dataContratacao, String endereco){
-        super.setNome(nome);
-        super.setCodigo(codigo);
-        this.dataContratacao = dataContratacao;
+
+    public void setDadosProfessor(String nome, Integer codigo, Double salario, String cargo) {
+        this.setDadosProfessor(nome, codigo, salario, cargo, null, null, null, null);
+    }
+
+    public void setDadosProfessor(String nome, Integer codigo, Double salario, String cargo, String matricula) {
+        this.setDadosProfessor(nome, codigo, salario, cargo, matricula, null, null, null);
+    }
+
+    public void setDadosProfessor(String nome, Integer codigo, Double salario, String cargo, String matricula, String telefone) {
+        this.setDadosProfessor(nome, codigo, salario, cargo, matricula, telefone, null, null);
+    }
+
+    public void setDadosProfessor(String nome, Integer codigo, Double salario, String cargo, String matricula, String telefone, String endereco) {
+        this.setDadosProfessor(nome, codigo, salario, cargo, matricula, telefone, endereco, null);
+    }
+
+    public void setDadosProfessor(String nome, Integer codigo, Double salario, String cargo, String matricula, String telefone, String endereco, LocalDate dataContratacao) {
+        this.matricula = matricula;
+        this.telefone = telefone;
         this.endereco = endereco;
+        this.dataContratacao = dataContratacao;
     }
 
 
