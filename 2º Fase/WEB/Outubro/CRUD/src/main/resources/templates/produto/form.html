@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+<body>
+    <form 
+        method = "POST" 
+        th:action = "@{/produto/salvar}" 
+        th:object = "${ProdutoEntity}">
+
+        <fieldset>
+            <legend>Cadastro de Produto</legend>
+
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" />
+            </div>
+
+            <div>
+                <label for="valor">Valor</label>
+                <input type="text" id="valor" name="valor" />
+            </div>
+            
+            <input type="submit" value="Salvar" />
+        </fieldset>
+    </form>
+</body>
+</html>
