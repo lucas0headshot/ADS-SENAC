@@ -1,0 +1,1 @@
+SELECT f_total_itens(590) AS vl_total_pedido;

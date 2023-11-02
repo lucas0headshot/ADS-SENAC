@@ -1,0 +1,1 @@
+SELECT f_soma_pedidos('2010-09-02', '2023-12-31') AS vl_total_intervalo;

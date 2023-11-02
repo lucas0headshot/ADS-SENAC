@@ -1,0 +1,1 @@
+SELECT f_ultimo_pedido() AS dt_ultimo_pedido;
