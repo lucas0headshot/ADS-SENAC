@@ -1,0 +1,91 @@
+.App {
+  max-width: 100%;
+  padding: 0 27px 0 27px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+/*
+  Header
+*/
+  .App-header {
+    display: flex;
+    padding: 27px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 100%;
+  }
+
+  .App-logo {
+    height: 6vmin;
+    pointer-events: none;
+  }
+
+
+  /*
+    Menu
+  */
+    .App-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .App-menu-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .App-menu-list-item a {
+      display: inline-block;
+      color: #004587;
+      font-size: 16px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: all .3s ease-in-out;
+      text-decoration: none;
+    }
+    .App-menu-list-item a:hover {
+      color: #FFF;
+      background-color: #004587;
+      border-radius: 10px;
+      transition: all .3s ease-in-out;
+    }
+  /*
+    /Menu
+  */
+/*
+  /Header
+*/
+
+
+/*
+  Body
+*/
+  .Body-banner {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://localhost:3000/banner.jpg");
+    background-size: cover;
+  }
+
+  .Body-title {
+    color: #f7941d;
+    font-size: 5rem;
+    margin-bottom: 10px;
+  }
+
+  .Body-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+/*
+  /Body
+*/
