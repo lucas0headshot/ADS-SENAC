@@ -19,11 +19,7 @@ public class Person extends EntityId {
 
 
 
-    public Person(String name, String telephone, String address, String email) {
-        this.name = name;
-        this.telephone = telephone;
-        this.address = address;
-        this.email = email;
+    public Person() {
     }
 
 

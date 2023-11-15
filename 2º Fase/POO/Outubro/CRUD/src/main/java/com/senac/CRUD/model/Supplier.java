@@ -13,10 +13,8 @@ public class Supplier extends Person {
 
 
 
-    public Supplier(String name, String telephone, String address, String email, String cnpj, String socialName) {
-        super(name, telephone, address, email);
-        this.cnpj = cnpj;
-        this.socialName = socialName;
+    public Supplier() {
+        super();
     }
 
     public String getCnpj() {

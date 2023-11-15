@@ -13,10 +13,8 @@ public class Client extends Person {
 
 
 
-    public Client(String name, String telephone, String address, String email, String cpf, Double creditLimit) {
-        super(name, telephone, address, email);
-        this.cpf = cpf;
-        this.creditLimit = creditLimit;
+    public Client() {
+        super();
     }
 
 
@@ -26,5 +24,14 @@ public class Client extends Person {
 
     public Double getCreditLimit() {
         return creditLimit;
+    }
+
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setCreditLimit(Double creditLimit) {
+        this.creditLimit = creditLimit;
     }
 }
