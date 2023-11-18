@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
-import { Box } from '@mui/material';
+import { DataGrid, GridColDef} from '@mui/x-data-grid';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
   /*
@@ -23,14 +23,14 @@ function App() {
       {id: 3, name: 'Erick'}
     ];
 
-    function DataGrid() {
+    function HomeDataGrid() {
       return (
         <Box sx={{ height: 400, width: '100%' }}>
-          <DataGrid>
+          <DataGrid
             rows = {rows}
             columns = {columns}
-            
-            initialState = {{
+
+            initialState= {{
               pagination: {
                 paginationModel: {
                   pageSize: 5,
@@ -38,14 +38,28 @@ function App() {
               },
             }}
 
-            pageSizeOptions = {[5]}
-          </>
+            pageSizeOptions={[5]}
+            checkboxSelection
+            disableRowSelectionOnClick
+          />
         </Box>
       );
-    }
+    };
   /*
     DataGrid
   */
+
+
+  /*
+  
+  */
+  const [openCadastro, setOpenCadastro] = useState<boolean>(false);
+  const [id, setId] = useState<string>();
+  const [nome, setNome] = useState<string>("");
+  const [row, setRow] = useState<any[]>([]);
+  const closeCadastro = () => {
+    setOpenCadastro(false);
+  }
 
 
   return (
@@ -84,7 +98,32 @@ function App() {
           </p>
         </div>
 
-        DataGrid();
+        {HomeDataGrid()}
+
+        <div>
+          <Button variant="contained" onClick={() => {setOpenCadastro(true)}}>Adicionar cliente</Button>
+        </div>
+
+        <Dialog className='Modal-Client' open={openCadastro} onClose={closeCadastro}>
+          <DialogTitle>Cadastro</DialogTitle>
+          
+          <DialogContent>
+            <div>
+              <TextField margin="dense" fullWidth variant="outlined" label="ID" id="id" onChange={(e) => setId(e.target.value)}>ID</TextField>
+            </div>
+            <div>
+              <TextField margin="dense" fullWidth variant="outlined" label="Nome" id="nome" onChange={(e) => setNome(e.target.value)}>Nome</TextField>
+            </div>
+          </DialogContent>
+
+          <DialogActions>
+            <div>
+              <Button variant="contained" onClick={() => {
+                onSalvarCliente();
+              }}>Salvar cliente</Button>
+            </div>
+          </DialogActions>
+        </Dialog>
       </div>
     </div>
   );
