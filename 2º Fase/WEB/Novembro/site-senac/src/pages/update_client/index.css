@@ -1,0 +1,16 @@
+.App-body {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+.Body-box {
+    width: 50%;
+    justify-content: center;
+}
+
+.Box-input {
+    padding: 10px;
+}

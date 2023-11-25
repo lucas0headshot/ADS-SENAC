@@ -1,7 +1,13 @@
 import { DataGrid, GridColDef} from '@mui/x-data-grid';
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
-import './App.css';
 import { useState } from 'react';
+
+import './App.css';
+
+import Header from './components/partials/header'
+import { useNavigate } from 'react-router-dom';
+
+
 
 function App() {
   /*
@@ -23,7 +29,7 @@ function App() {
       {id: 3, name: 'Erick'}
     ];
 
-    function HomeDataGrid() {
+    const HomeDataGrid = () => {
       return (
         <Box sx={{ height: 400, width: '100%' }}>
           <DataGrid
@@ -41,6 +47,10 @@ function App() {
             pageSizeOptions={[5]}
             checkboxSelection
             disableRowSelectionOnClick
+
+            onRowDoubleClick={(t) => {
+              navigate(`/update/${t.id}`);
+            }}
           />
         </Box>
       );
@@ -50,45 +60,32 @@ function App() {
   */
 
 
-  /*
-  
-  */
   const [openCadastro, setOpenCadastro] = useState<boolean>(false);
   const [id, setId] = useState<string>();
-  const [nome, setNome] = useState<string>("");
+  const [name, setName] = useState<string>("");
   const [row, setRow] = useState<any[]>([]);
+
+  const navigate = useNavigate();
+
   const closeCadastro = () => {
+    setOpenCadastro(false);
+  }
+
+  const onSaveClient = () => {
+    const _row: any[] = [...row];
+      _row.push({
+      id: Number(id),
+      name: name || ""
+  });
+
+    setRow(_row);
     setOpenCadastro(false);
   }
 
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="./images/logo.png" className="App-logo" alt="logo" />
-
-        <nav className="App-menu">
-          <ul className='App-menu-list'>
-            <li className='App-menu-list-item'>
-              <a href="#o-senac">O Senac</a>
-            </li>
-
-            <li className='App-menu-list-item'>
-              <a href="#unidades">Unidades</a>
-            </li>
-
-            <li className='App-menu-list-item'>
-              <a href="#gratuidades">Gratuidades</a>
-            </li>
-
-            <li className='App-menu-list-item'>
-              <a href="#educacao-a-distancia">Educação a Distância</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-
+      <Header />
       <div className='App-body'>
         <div className='Body-banner'>
           <h1 className='Body-title'>Senac</h1>
@@ -109,17 +106,17 @@ function App() {
           
           <DialogContent>
             <div>
-              <TextField margin="dense" fullWidth variant="outlined" label="ID" id="id" onChange={(e) => setId(e.target.value)}>ID</TextField>
+              <TextField margin="dense" fullWidth variant="outlined" label="ID" id="id" onChange={(text) => setId(text.target.value)}>ID</TextField>
             </div>
             <div>
-              <TextField margin="dense" fullWidth variant="outlined" label="Nome" id="nome" onChange={(e) => setNome(e.target.value)}>Nome</TextField>
+              <TextField margin="dense" fullWidth variant="outlined" label="Nome" id="name" onChange={(text) => setName(text.target.value)}>Nome</TextField>
             </div>
           </DialogContent>
 
           <DialogActions>
             <div>
               <Button variant="contained" onClick={() => {
-                onSalvarCliente();
+                onSaveClient();
               }}>Salvar cliente</Button>
             </div>
           </DialogActions>
