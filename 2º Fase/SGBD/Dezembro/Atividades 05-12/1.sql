@@ -1,0 +1,1 @@
+CREATE USER ronchi@localhost IDENTIFIED BY 'senac2023';
