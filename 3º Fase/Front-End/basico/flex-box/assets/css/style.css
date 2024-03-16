@@ -1,0 +1,37 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container-parede {
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid #000;
+    background: #808080;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+
+
+.item-quadro {
+    margin: 5px;
+    padding: 5px;
+    background: #ffa500;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+}

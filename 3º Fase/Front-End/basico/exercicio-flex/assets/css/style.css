@@ -1,0 +1,46 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    background: #808080;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+.item {
+    background: #008000;
+    color: #FFF;
+    padding: 40px 20px;
+    margin-top: 19px;
+}
+
+.item-1 {
+    width: 100px;
+    height: 100px;
+}
+.item-2 {
+    height: 50px;
+    width: 150px;
+}
+.item-3 {
+    height: 100px;
+    width: 200px;
+}
