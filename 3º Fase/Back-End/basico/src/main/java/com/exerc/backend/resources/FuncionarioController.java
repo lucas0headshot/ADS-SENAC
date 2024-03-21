@@ -11,9 +11,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.print.Pageable;
-import java.util.List;
-
 
 
 @RestController
@@ -32,9 +29,9 @@ public class FuncionarioController {
 
 
     @GetMapping
-    public ResponseEntity get(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
+    public ResponseEntity get(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(required = false) String filter) {
         PageRequest pageable = PageRequest.of(page, size);
-        Page<Funcionario> funcionarioPage = repository.findAll(pageable);
+        Page<Funcionario> funcionarioPage = repository.findAll(filter, Funcionario.class, pageable);
         Page<FuncionarioDTO> funcionarioDTOPage = funcionarioPage.map(FuncionarioDTO::fromEntity);
         return ResponseEntity.ok(funcionarioDTOPage);
     }
