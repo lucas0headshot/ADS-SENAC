@@ -1,0 +1,32 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container-parede {
+    display: grid;
+    max-width: 1200px;
+    color: #ffffff;
+    gap: 10px;
+    background: grey;
+    grid-template-rows: 120px 200px auto auto;
+}
+
+
+
+.item-revestimento {
+    display: grid;
+    background: #ffa500;
+    justify-items: center;
+    align-items: center;
+}

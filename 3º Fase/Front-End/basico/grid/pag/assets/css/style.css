@@ -1,0 +1,50 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    color: #fff;
+    background: gray;
+    grid-template:
+        "logo header header" 10%
+        "logo main main" 50px
+        "aside main main" 70%
+        "aside footer footer" 1fr / 10% 1fr 10px;
+    margin: 0 auto;
+}
+
+
+
+.principal {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+.logo {
+    grid-area: logo;
+    background: green;
+}
+
+header {
+    grid-area: header;
+    background: black;
+}
+
+aside {
+    grid-area: aside;
+    background: blue;
+}
+
+main {
+    color: #000;
+    grid-area: main;
+    background: yellow;
+}
+
+footer {
+    grid-area: footer;
+    background: pink;
+}
