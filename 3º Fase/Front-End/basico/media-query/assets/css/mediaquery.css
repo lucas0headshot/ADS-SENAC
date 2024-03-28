@@ -1,0 +1,87 @@
+@media only print {
+    body {
+        background: url(../images/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid #000;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: #000;
+    }
+
+    #print {
+        display: block;
+    }
+
+    #phone, #tablet, #pc, #tv {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url(../images/back-tablet.jpg);
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #phone, #print, #pc, #tv {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../images/back-tablet.jpg);
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #phone, #print, #pc, #tv {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../images/back-pc.jpg);
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #phone, #print, #tablet, #tv {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 1201px) {
+    body {
+        background: url(../images/back-tv.jpg);
+    }
+
+    #tv {
+        display: block;
+    }
+
+    #phone, #print, #tablet, #pc {
+        display: none;
+    }
+}
