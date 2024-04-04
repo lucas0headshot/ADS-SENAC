@@ -2,12 +2,15 @@ package senac.sincronidade.sincrona.controller;
 
 
 
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import senac.sincronidade.sincrona.model.Pais;
 import senac.sincronidade.sincrona.repository.PaisRepository;
+
+import java.util.UUID;
 
 
 @RestController
@@ -18,6 +21,20 @@ public class PaisController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+
+
+    @GetMapping("/{id}")
+    public ResponseEntity getByUUID(@RequestParam("id") UUID id) {
+        ResponseEntity<Pais> responseEntity = restTemplate
+                .getForEntity(
+                        "http://localhost:8088/api/paises-replica",
+                        Pais.class,
+                        id
+                );
+
+        return ResponseEntity.ok().body(responseEntity.getBody());
+    }
 
 
 

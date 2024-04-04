@@ -4,13 +4,12 @@ package senac.workertest.workersincrono.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import senac.workertest.workersincrono.model.Pais;
 import senac.workertest.workersincrono.repository.PaisReplicaRepository;
+import java.util.UUID;
+
 
 
 @RestController
@@ -21,6 +20,14 @@ public class PaisReplicaController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+
+    @GetMapping("/{id}")
+    public ResponseEntity getByUUID(@RequestParam("id") UUID id) {
+        return ResponseEntity.ok().body(repository.findByUUID(id));
+    }
+
+
 
     @PostMapping
     public ResponseEntity post(@RequestBody Pais entity) {
