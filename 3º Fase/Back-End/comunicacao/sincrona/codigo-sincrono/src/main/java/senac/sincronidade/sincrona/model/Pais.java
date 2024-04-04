@@ -16,7 +16,7 @@ public class Pais extends EntityID {
     private String sigla;
 
     @Column
-    private String populacao;
+    private Integer populacao;
 
 
 
@@ -36,11 +36,11 @@ public class Pais extends EntityID {
         this.sigla = sigla;
     }
 
-    public String getPopulacao() {
+    public Integer getPopulacao() {
         return populacao;
     }
 
-    public void setPopulacao(String populacao) {
+    public void setPopulacao(Integer populacao) {
         this.populacao = populacao;
     }
 

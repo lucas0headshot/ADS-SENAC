@@ -1,15 +1,16 @@
-package senac.sincronidade.sincrona.controller;
+package senac.sincronidade.sincrona.resource;
 
 
 
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import senac.sincronidade.sincrona.model.Pais;
 import senac.sincronidade.sincrona.repository.PaisRepository;
+import senac.sincronidade.sincrona.service.PaisService;
 
+import java.net.URI;
 import java.util.UUID;
 
 
@@ -17,12 +18,17 @@ import java.util.UUID;
 @RequestMapping("/api/paises")
 public class PaisController {
     @Autowired
-    private PaisRepository repository;
+    private PaisService service;
 
     @Autowired
     private RestTemplate restTemplate;
 
 
+
+    @GetMapping
+    public ResponseEntity get() {
+        return ResponseEntity.ok().body(service.get());
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity getByUUID(@RequestParam("id") UUID id) {
@@ -40,16 +46,14 @@ public class PaisController {
 
     @PostMapping
     public ResponseEntity post(@RequestBody Pais entity) {
-        repository.save(entity);
+        service.post(entity);
 
-        ResponseEntity<String> responseEntity = restTemplate
+        ResponseEntity<String> response = restTemplate
                 .postForEntity(
                         "http://localhost:8088/api/paises-replica",
                         entity,
                         String.class);
 
-        System.out.println(responseEntity.getStatusCode());
-
-        return ResponseEntity.ok().body(entity);
+        return ResponseEntity.created(URI.create("/api/paises/" + entity.getId())).body(entity);
     }
 }

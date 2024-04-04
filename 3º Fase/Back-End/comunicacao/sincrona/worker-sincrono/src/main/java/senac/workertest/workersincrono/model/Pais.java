@@ -9,14 +9,14 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Pais extends EntityID {
-    @Column
+    @Column(nullable = false)
     private String nome;
 
-    @Column
+    @Column(nullable = false)
     private String sigla;
 
-    @Column
-    private String populacao;
+    @Column(nullable = false)
+    private Integer populacao;
 
 
 
@@ -36,12 +36,18 @@ public class Pais extends EntityID {
         this.sigla = sigla;
     }
 
-    public String getPopulacao() {
+    public Integer getPopulacao() {
         return populacao;
     }
 
-    public void setPopulacao(String populacao) {
+    public void setPopulacao(Integer populacao) {
         this.populacao = populacao;
+    }
+
+
+
+    public void incrementarPopulacao() {
+        this.populacao++;
     }
 
 

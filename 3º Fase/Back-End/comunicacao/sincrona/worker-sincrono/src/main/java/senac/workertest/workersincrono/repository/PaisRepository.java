@@ -11,6 +11,5 @@ import java.util.UUID;
 
 
 @Repository
-public interface PaisReplicaRepository extends JpaRepository<Pais, UUID> {
-    Optional<Pais> findByUUID(UUID id);
+public interface PaisRepository extends JpaRepository<Pais, UUID> {
 }

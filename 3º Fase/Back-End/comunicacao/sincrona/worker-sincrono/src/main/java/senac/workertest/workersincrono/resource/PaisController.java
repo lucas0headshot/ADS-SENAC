@@ -7,24 +7,25 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import senac.workertest.workersincrono.model.Pais;
-import senac.workertest.workersincrono.repository.PaisReplicaRepository;
+import senac.workertest.workersincrono.repository.PaisRepository;
 import java.util.UUID;
 
 
 
 @RestController
 @RequestMapping("/api/paises-replica")
-public class PaisReplicaController {
+public class PaisController {
     @Autowired
-    private PaisReplicaRepository repository;
+    private PaisRepository repository;
 
     @Autowired
     private RestTemplate restTemplate;
 
 
+
     @GetMapping("/{id}")
-    public ResponseEntity getByUUID(@RequestParam("id") UUID id) {
-        return ResponseEntity.ok().body(repository.findByUUID(id));
+    public ResponseEntity getById(@RequestParam("id") UUID id) {
+        return ResponseEntity.ok().body(repository.findById(id));
     }
 
 

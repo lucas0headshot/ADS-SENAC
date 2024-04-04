@@ -15,4 +15,23 @@ public class EntityID {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+
+
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "EntityID{" +
+                "id=" + id +
+                '}';
+    }
 }
