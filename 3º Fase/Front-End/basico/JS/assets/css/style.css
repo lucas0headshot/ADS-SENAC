@@ -24,6 +24,16 @@ main {
 
 
 
+form {
+    gap: 20px;
+}
+
+input {
+    width: 10vw;
+}
+
+
+
 h1 {
     color: #FFF;
     text-decoration: underline;
@@ -33,5 +43,4 @@ h1 {
 
 button {
     padding: 5px;
-    margin-top: 50px;
 }

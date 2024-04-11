@@ -6,7 +6,7 @@
  * @returns {boolean} 
  */
 export function validarEmail(email = '') {
-    const regex = /\S+@\+\.\S+/;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     return regex.test(email);
 };
