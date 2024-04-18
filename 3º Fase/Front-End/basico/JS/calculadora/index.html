@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas">
+
+    <title>Básico JS</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer type="text/javascript" src="assets/js/index.mjs"></script>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+
+        <div class="calculadora">
+            <div class="visor-wrapper">
+                <input type="text" placeholder="0" id="visor" readonly>
+            </div>
+
+            <div class="botoes-wrapper">
+                <form>
+                    <div class="row">
+                        <button type="button" onClick="limparVisor()">CE</button>
+                    </div>
+
+                    <div class="row">
+                        <button type="button" onClick="addNoVisor(7)">7</button>
+                        <button type="button" onClick="addNoVisor(8)">8</button>
+                        <button type="button" onClick="addNoVisor(9)">9</button>
+                        <button type="button" onClick="addNoVisor('*')">*</button>
+                        <button type="button" onClick="addNoVisor(4)">4</button>
+                        <button type="button" onClick="addNoVisor(5)">5</button>
+                        <button type="button" onClick="addNoVisor(6)">6</button>
+                        <button type="button" onClick="addNoVisor('-')">-</button>
+                        <button type="button" onClick="addNoVisor(1)">1</button>
+                        <button type="button" onClick="addNoVisor(2)">2</button>
+                        <button type="button" onClick="addNoVisor(3)">3</button>
+                        <button type="button" onClick="addNoVisor(0)">0</button>
+                        <button type="button" onClick="addNoVisor('.')">.</button>
+                        <button type="button" onClick="calcular()">=</button>
+                        <button type="button" onClick="addNoVisor('+')">+</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
