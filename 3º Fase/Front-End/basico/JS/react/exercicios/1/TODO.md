@@ -1,0 +1,1 @@
+Criar um componente funcional que aceita um prop "name", renderize uma mensagem de boas vindas de acordo com a prop informada.
