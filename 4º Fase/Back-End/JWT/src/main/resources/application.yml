@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt
+    password: Sen@c2023
+    username: postgres
+    driverClassName: org.postgresql.Driver
+  security:
+    token:
+      secret: segredo
+      expiration_time: 60
