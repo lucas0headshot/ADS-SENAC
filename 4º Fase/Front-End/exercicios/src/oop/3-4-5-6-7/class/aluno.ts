@@ -84,7 +84,7 @@ export class Aluno implements iPadrao {
     }
 
     getStatus(): string {
-        if (this.getNota1() + this.getNota2() / 2 < 7) {
+        if (this.getNota1() + this.getNota2() / 2 > 7) {
             return "aprovado";
         } else {
             return "reprovado";
