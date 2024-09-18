@@ -63,7 +63,7 @@ class Aluno {
         }
     }
     listar() {
-        return (0, listarGenerico_1.listarGenerico)(this) + `Nota 1: ${this.getNota1()},
+        return `${(0, listarGenerico_1.listarGenerico)(this)} Nota 1: ${this.getNota1()},
                 Nota 2: ${this.getNota2()} e Status: ${this.getStatus()}`;
     }
 }
