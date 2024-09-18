@@ -55,7 +55,7 @@ class Professor {
         return this.classe;
     }
     listar() {
-        return `${(0, listarGenerico_1.listarGenerico)(this)} Materia: ${this.getMateria()} e Classe: ${this.getClasse()}`;
+        return (0, listarGenerico_1.listarGenerico)(this) + `Materia: ${this.getMateria()} e Classe: ${this.getClasse()}`;
     }
 }
 exports.Professor = Professor;
