@@ -84,6 +84,6 @@ export class Professor implements iPadrao {
     }
 
     listar(): string {
-        return listarGenerico(this) + `Materia: ${this.getMateria()} e Classe: ${this.getClasse()}`;
+        return `${listarGenerico(this)} Materia: ${this.getMateria()} e Classe: ${this.getClasse()}`;
     }
 };

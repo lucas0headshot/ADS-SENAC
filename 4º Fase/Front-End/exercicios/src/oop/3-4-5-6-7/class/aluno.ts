@@ -92,7 +92,7 @@ export class Aluno implements iPadrao {
     }
 
     listar(): string {
-        return listarGenerico(this) + `Nota 1: ${this.getNota1()},
+        return `${listarGenerico(this)} Nota 1: ${this.getNota1()},
                 Nota 2: ${this.getNota2()} e Status: ${this.getStatus()}`;
     }
 };
