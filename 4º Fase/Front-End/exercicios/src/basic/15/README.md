@@ -1,0 +1,2 @@
+15. **Literal Types Direção**
+    - Crie literal types, chamada `direcao` que só possa aceitar os valores "cima", "baixo", "esquerda" ou "direita". Atribua diferentes valores à variável e observe como o TypeScript trata valores que não são permitidos.

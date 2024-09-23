@@ -1,0 +1,2 @@
+11. **Função formatarEntrada**
+    - Crie uma função chamada `formatarEntrada` que receba um valor do tipo `string | number` e retorne: se for um número, o número multiplicado por 2. Se for uma string, a string em maiúsculas.

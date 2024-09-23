@@ -1,0 +1,2 @@
+9. **Função mostrarProduto**
+   - Crie uma função `mostrarProduto` que recebe um objeto do tipo `Produto` e imprime o nome e preço do produto. Se a descrição estiver presente, ela também deve ser exibida.

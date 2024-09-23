@@ -1,0 +1,2 @@
+12. **Interface Pagamento**
+    - Crie uma interface `Pagamento` com a propriedade valor (número) e a propriedade método (que pode ser "cartao" ou "boleto"). Crie uma função `realizarPagamento` que aceite um objeto do tipo `Pagamento` e imprima uma mensagem personalizada de acordo com o método de pagamento.

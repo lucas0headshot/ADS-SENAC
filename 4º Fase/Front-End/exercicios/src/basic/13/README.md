@@ -1,0 +1,2 @@
+13. **Type Alias Carro**
+    - Crie um Type Alias chamado `Carro` que tenha as propriedades marca (string) e ano (number). Crie um objeto do tipo `Carro` e atribua valores a ele, mostrando no console do navegador.

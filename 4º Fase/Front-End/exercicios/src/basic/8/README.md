@@ -1,0 +1,2 @@
+8. **Interface Produto**
+   - Crie uma interface `Produto` com as propriedades: nome (obrigatória), preço (obrigatória) e descrição (opcional). Crie dois objetos do tipo `Produto`, um com descrição e outro sem.

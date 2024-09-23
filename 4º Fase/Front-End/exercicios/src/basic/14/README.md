@@ -1,0 +1,2 @@
+14. **Type Alias Resultado**
+    - Crie um Type Alias chamado `Resultado` que pode ser uma string ou um number. Crie uma função chamada `processarResultado` que aceite um valor do tipo `Resultado` e imprima uma mensagem personalizada dependendo do tipo do valor no console do navegador.
