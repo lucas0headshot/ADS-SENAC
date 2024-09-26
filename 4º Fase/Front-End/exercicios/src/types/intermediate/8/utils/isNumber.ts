@@ -1,0 +1,1 @@
+export const isNumber = (valor: any): valor is number => typeof valor === "number"; 

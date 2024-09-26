@@ -1,0 +1,1 @@
+export const saudar = (): void => console.log("Bem-vindo!");

@@ -1,0 +1,2 @@
+## 5. Função de Guarda de Tipo (Type Guard)
+Implemente uma função que atue como um "guardião de tipo" para verificar se um valor é um número e outra para verificar se é uma string. Use essa função para processar diferentes entradas.

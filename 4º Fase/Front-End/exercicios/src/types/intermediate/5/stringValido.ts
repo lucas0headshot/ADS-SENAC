@@ -1,0 +1,1 @@
+export const stringValido = (valor: any): valor is string => typeof valor === "string";

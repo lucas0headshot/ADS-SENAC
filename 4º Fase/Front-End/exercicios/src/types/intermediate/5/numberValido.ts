@@ -1,0 +1,1 @@
+export const numberValido = (valor: any): valor is number => typeof valor === "number";
