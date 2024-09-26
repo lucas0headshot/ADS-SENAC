@@ -1,4 +1,4 @@
 import { callbackAssincrono } from "./callbackAssincrono";
 
-const callback = (objeto: Object) => console.log(objeto);
+const callback: Function = (objeto: Object) => console.log(objeto);
 callbackAssincrono(callback);
