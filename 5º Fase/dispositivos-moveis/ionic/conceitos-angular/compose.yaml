@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    container_name: ionic-app
+    ports: 
+      - "8100:8100"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8100"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    tty: true

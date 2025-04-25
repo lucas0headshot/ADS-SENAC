@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Números
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Verifique se o número é par ou ímpar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-input fill="outline" label="Número" min=1 type="number" placeholder=1 [(ngModel)]="numero"></ion-input>
+  <ion-button color="danger" class="text-white" (click)="verificarNumero()">Verificar</ion-button>
+  <ion-text color="success">
+    <h1>{{ [resultado] }}</h1>
+  </ion-text>
+</ion-content>
